@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub UI Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Event Manage</div>
+        <ul>
+            <li><a id="back" onclick="backto()" href="#">Home</a></li>
+            <li><a href="#">Events</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showRegister()">Register</button>
+        </div>
+    </nav>
+    
+    <div class="container" id="home">
+        <h1>Find and Book Amazing Events</h1>
+        <p>Discover events that match your interests, book tickets, and create unforgettable memories.</p>
+        <button>Browse Events</button>
+        <button>Become an Organizer</button>
+    </div>
+
+    <div class="form-container" id="login-form" style="display:none;">
+        <h2>Login</h2>
+        <form>
+            <label>Email</label>
+            <input type="email" placeholder="name@example.com">
+            <label>Password</label>
+            <input type="password">
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+        </form>
+    </div>
+
+    <div class="form-container" id="register-form" style="display:none;">
+        <h2>Create an account</h2>
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="John Doe">
+            <label>Email</label>
+            <input type="email" placeholder="name@example.com">
+            <label>Account Type</label>
+            <select>
+                <option>Client</option>
+                <option>Organizer</option>
+            </select>
+            <label>Password</label>
+            <input type="password">
+            <label>Confirm Password</label>
+            <input type="password">
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </form>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
